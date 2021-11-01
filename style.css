@@ -1,7 +1,297 @@
+/* -------------- MAIN DOCUMENT ---------------------- */
+
 * {
     padding: 0;
     margin: 0;
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #7D2AE8;
+}
+
+
+/* ------------------- ID CARD ---------------------- */
+
+.outerID {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    left: 30%;
+    margin-top: 7rem;
+}
+
+.innerID {
+    position: relative;
+    width: 48rem;
+    height: 28rem;
+    background: url(Images/Pattern\ Only.jpg);
+    background-size: cover;
+    border-radius: 1rem;
+    left: 2%;
+    top: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerContainer {
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    height: 5rem;
+    width: 90%;
+    background: var(--primary-color);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.headerShadow {
+    position: absolute;
+    height: 5rem;
+    width: 90%;
+    background: black;
+    left: 45%;
+    transform: translateX(-45%);
+    top: 20%;
+    z-index: 1;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.innerID .header .logo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.schoolName {
+    height: 3rem;
+    width: 80%;
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.schoolName:focus {
+    outline: none;
+}
+
+.schoolName::placeholder {
+    color: white;
+}
+
+.idBody {
+    height: 80%;
+    width: 100%;
+}
+
+.idBodyContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ------------------- ID FORM ---------------------*/
+
+.idForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 50%;
+    position: relative;
+}
+
+.idForm .name {
+    width: 80%;
+    height: 20%;
+    z-index: 0;
+    position: relative;
+}
+
+.name input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgba(20, 20, 20, 1);
+    border: none;
+    color: white;
+}
+
+.name input::placeholder {
+    color: white;
+}
+
+.nameLabel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    left: -1%;
+    top: 10%;
+    z-index: -1;
+}
+
+.idForm .designation {
+    width: 80%;
+    height: 20%;
+    z-index: 0;
+    position: relative;
+}
+
+.designation input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgba(20, 20, 20, 1);
+    border: none;
+    color: white;
+}
+
+.designation input::placeholder {
+    color: white;
+}
+
+.designationLabel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    left: -1%;
+    top: 10%;
+    z-index: -1;
+}
+
+.idForm .bloodGroup {
+    width: 80%;
+    height: 20%;
+    z-index: 0;
+    position: relative;
+}
+
+.bloodGroup input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgba(20, 20, 20, 1);
+    border: none;
+    color: white;
+}
+
+.bloodGroup input::placeholder {
+    color: white;
+}
+
+.bloodGroupLabel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    left: -1%;
+    top: 10%;
+    z-index: -1;
+}
+
+
+/* ------------------- PROFILE PICTURE ---------------------*/
+
+.profilePicContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.profilePic {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profilePic img {
+    width: 100%;
+    height: 100%;
+}
+
+.changePictureDiv {
+    width: 100%;
+    height: 10%;
+}
+
+.changePictureButton {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+}
+
+.changePicture {
+    visibility: hidden;
+}
+
+.changePictureLabel {
+    font-size: 1rem;
+    background: white;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.changePictureLabel:hover {
+    cursor: pointer;
+}
+
+.changePictureLabelLabel {
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    margin-top: 1%;
+    margin-left: 26.5%;
+    background: black;
+    left: -1%;
+    z-index: -1;
 }
