@@ -2,23 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Tune</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ID-Card.css">
+    <link rel="stylesheet" href="Navigation.css">
+    <script src="Main.js" defer></script>
 </head>
 
 <body>
     <div class="mainContainer">
+        <div class="nav">
+            <div class="company-items">
+                <div class="company-logo-container">
+                    <img class="company-logo" src="Images/Profile Picture 3.png" alt="">
+                </div>
+                <h1 class="company-title"> <span>M</span>ODERN TUNE</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#"> ORDER SCHOOL ID </a></li>
+                    <li><a href="#"> ABOUT US </a></li>
+                </ul>
+            </div>
+        </div>
         <div class="outerID">
+            <div class="ribbon1"></div>
+            <div class="ribbon2"></div>
             <div class="innerID">
                 <div class="headerContainer">
                     <div class="header">
-                        <div class="logo">
-                            <img src="Images/Profile Picture 3.png">
+                        <div class="logoContainer">
+                            <div class="logo" id="logo">
+                                <img id="image" src="Images/Profile Picture 3.png" />
+                            </div>
+                            <input type="file" id="inputLogo" class="inputLogo" onchange="displayImage(this.id)" />
+                            <div class="inputLogoDiv">
+                                <label class="inputLogoLabel" for="inputLogo">
+                                    Change Logo
+                                </label>
+                                <label class="inputLogoLabelLabel" for="inputLogo"></label>
+                            </div>
                         </div>
-                        <input type="text" class="schoolName" id="schoolName" placeholder="Institution">
+                        <input type="text" class="schoolName" id="schoolName" placeholder="Institution" />
                     </div>
                     <div class="headerShadow"></div>
                 </div>
@@ -26,38 +54,39 @@
                     <div class="idBodyContent">
                         <div class="idForm">
                             <div class="name">
-                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Name" />
                                 <label class="nameLabel"></label>
                             </div>
                             <div class="designation">
-                                <input type="text" placeholder="Designation">
+                                <input type="text" placeholder="Designation" />
                                 <label class="designationLabel"></label>
                             </div>
                             <div class="bloodGroup">
-                                <input type="text" placeholder="Blood Group">
+                                <input type="text" placeholder="Blood Group" />
                                 <label class="bloodGroupLabel"></label>
                             </div>
                         </div>
                         <div class="profilePicContainer">
                             <div class="profilePic">
-                                <img src="Images/Profile Picture 2.png" alt="">
-
+                                <img id="profilePicture" src="Images/Profile Picture 2.png" alt="" />
                             </div>
                             <div class="changePictureDiv">
-                                <input type="file" id="changePicture" class="changePicture">
+                                <input type="file" id="changePicture" class="changePicture" onchange="displayImage()" />
                                 <div class="changePictureButton">
-                                    <label for="changePicture" class="changePictureLabel"> Change Picture </label>
+                                    <label for="changePicture" class="changePictureLabel">
+                                        Change Picture
+                                    </label>
                                     <label class="changePictureLabelLabel"></label>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
 
+        <div class="message">
+            <p> "Designs that help you grow"</p>
         </div>
     </div>
 </body>
