@@ -9,7 +9,38 @@
     --primary-color: #7D2AE8;
 }
 
+::-webkit-scrollbar {
+    width: 1.5rem;
+    background: white;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 1.5rem;
+    border-radius: 1rem;
+    background: var(--primary-color);
+}
+
 .mainContainer {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    background: rgba(173, 216, 230, 0.4);
+}
+
+.message {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message p {
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    z-index: 99;
 }

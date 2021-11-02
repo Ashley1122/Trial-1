@@ -105,13 +105,13 @@
 
 .innerID {
     position: relative;
-    width: 49.5rem;
-    height: 29.5rem;
+    width: 99%;
+    height: 99%;
     background: url(Images/Pattern\ Only.jpg);
     background-size: cover;
     border-radius: 1rem;
     left: 0.8%;
-    top: 0.5%;
+    top: -0.5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -437,4 +437,114 @@
     background: black;
     left: -1%;
     z-index: -1;
+}
+
+@media screen and (max-width:891px) {
+    .outerID {
+        width: 22rem;
+        height: 35rem;
+    }
+    * {
+        font-size: 50%;
+    }
+    .idBodyContent {
+        flex-direction: column;
+    }
+    .idForm {
+        width: 90%;
+    }
+    .schoolName {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .inputLogoDiv {
+        position: absolute;
+        margin-top: -10rem;
+    }
+    .profilePic {
+        width: 80%;
+        height: 60%;
+    }
+    .changePictureLabel {
+        width: 80%;
+    }
+    .changePictureLabelLabel {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .ribbon1 {
+        margin-top: -90%;
+    }
+    .ribbon2 {
+        margin-top: -90%;
+        left: 5%;
+    }
+    /* /* .outerID {
+        left: 20%;
+    } */
+    @keyframes swing {
+        0% {
+            transform: translateX(-30%) rotateZ(9deg);
+        }
+        8.3% {
+            transform: translateX(-20%) rotateZ(6deg);
+        }
+        16.6% {
+            transform: translateX(-10%) rotateZ(3deg);
+        }
+        24.9% {
+            transform: translateX(0%) rotateZ(0deg);
+        }
+        33.2% {
+            transform: translateX(10%) rotateZ(-3deg);
+        }
+        41.5% {
+            transform: translateX(20%) rotateZ(-6deg);
+        }
+        50% {
+            transform: translateX(30%) rotateZ(-9deg);
+        }
+        58.3% {
+            transform: translateX(20%) rotateZ(-6deg);
+        }
+        66.6% {
+            transform: translateX(10%) rotateZ(-3deg);
+        }
+        74.9% {
+            transform: translateX(0%) rotateZ(0deg);
+        }
+        83.2% {
+            transform: translateX(-10%) rotateZ(3deg);
+        }
+        91.5% {
+            transform: translateX(-20%) rotateZ(6deg);
+        }
+        100% {
+            transform: translateX(-30%) rotateZ(9deg);
+        }
+    }
+    .nav .navigation ul {
+        display: none;
+    }
+    .nav .company-items {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav .company-logo-container {
+        margin-left: -5rem;
+    }
+    .company-title {
+        margin-right: -20%;
+    }
+    .message {
+        width: 100%;
+    }
+    .message p {
+        font-size: 1.5rem;
+    }
+    .navigation .menuBtnDiv {
+        display: flex;
+        width: 10rem;
+        margin-right: -7rem;
+    }
 }

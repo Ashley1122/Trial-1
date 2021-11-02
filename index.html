@@ -9,11 +9,28 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ID-Card.css">
     <link rel="stylesheet" href="Navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <script src="Main.js" defer></script>
 </head>
 
 <body>
     <div class="mainContainer">
+        <div class="navigationPage">
+            <div class="navPageNavigation">
+                <div class="exitBtnDiv">
+                    <label class="exitBtnLabel" for="exitBtn"></label>
+                    <a class="exitBtn" id="exitBtn" href="#"> EXIT </a>
+                </div>
+            </div>
+            <div class="navPageBtns">
+                <ul>
+                    <li><a href="#"> ORDER SCHOOL ID </a></li>
+                    <li><a href="#"> ABOUT US </a></li>
+                </ul>
+            </div>
+        </div>
         <div class="nav">
             <div class="company-items">
                 <div class="company-logo-container">
@@ -26,6 +43,10 @@
                     <li><a href="#"> ORDER SCHOOL ID </a></li>
                     <li><a href="#"> ABOUT US </a></li>
                 </ul>
+                <div class="menuBtnDiv">
+                    <label class="menuBtnLabel" for="menuBtn"></label>
+                    <a class="menuBtn" id="menuBtn" href="#"> MENU </a>
+                </div>
             </div>
         </div>
         <div class="outerID">
@@ -52,20 +73,6 @@
                 </div>
                 <div class="idBody">
                     <div class="idBodyContent">
-                        <div class="idForm">
-                            <div class="name">
-                                <input type="text" placeholder="Name" />
-                                <label class="nameLabel"></label>
-                            </div>
-                            <div class="designation">
-                                <input type="text" placeholder="Designation" />
-                                <label class="designationLabel"></label>
-                            </div>
-                            <div class="bloodGroup">
-                                <input type="text" placeholder="Blood Group" />
-                                <label class="bloodGroupLabel"></label>
-                            </div>
-                        </div>
                         <div class="profilePicContainer">
                             <div class="profilePic">
                                 <img id="profilePicture" src="Images/Profile Picture 2.png" alt="" />
@@ -80,13 +87,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="idForm">
+                            <div class="name">
+                                <input type="text" placeholder="Name" />
+                                <label class="nameLabel"></label>
+                            </div>
+                            <div class="designation">
+                                <input type="text" placeholder="Designation" />
+                                <label class="designationLabel"></label>
+                            </div>
+                            <div class="bloodGroup">
+                                <input type="text" placeholder="Blood Group" />
+                                <label class="bloodGroupLabel"></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="message">
-            <p> "Designs that help you grow"</p>
+            <p> "Designed to help you in your growth"</p>
         </div>
     </div>
 </body>

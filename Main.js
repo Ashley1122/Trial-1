@@ -28,3 +28,15 @@ function displayImage(id) {
     }
 
 }
+
+const menuBtn = document.querySelector(".menuBtn");
+const navigationPage = document.querySelector(".navigationPage");
+const exitBtn = document.querySelector(".exitBtn");
+
+menuBtn.addEventListener("click", function() {
+    navigationPage.style.transform = "translateY(0%)"
+});
+
+exitBtn.addEventListener("click", function() {
+    navigationPage.style.transform = "translateY(-100%)"
+})
